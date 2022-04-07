@@ -21,6 +21,12 @@ RUN pip3 install jupyter==1.0.0 && pip3 install jupyterlab==2.1.0
 # RUN pip3 install tensorflow-gpu==2.1.0
 # RUN pip3 install lingvo==0.6.4
 
+#AFIA starts
+RUN pip3 install opencv-python
+RUN pip3 install librosa 
+RUN pip3 install soundfile 
+#AFIA ends
+
 RUN pip3 install h5py==2.10.0
 RUN pip3 install tensorflow-addons==0.11.1
 RUN pip3 install mxnet==1.6.0
@@ -41,7 +47,7 @@ WORKDIR /project
 
 # IMPORTANT: please double check that the dependencies above are up to date with the following requirements file. We currently still run pip install on dependencies within requirements_test.txt in order to keep dependencies in agreement (in the rare cases were someone updated the requirements_test.txt file and forgot to update the dockefile)
 ADD . /project/
-RUN pip3 install --upgrade -r /project/requirements_test.txt
+#RUN pip3 install --upgrade -r /project/requirements_test.txt
 
 RUN apt-get update
 RUN apt-get -y -q install ffmpeg libavcodec-extra
@@ -51,7 +57,8 @@ RUN pip3 list --outdated
 
 EXPOSE 8888
 
-CMD bash run_tests.sh
+#CMD bash run_tests.sh
+CMD ["python", "./run_tests.py"]
 
 #Check the Dockerfile here https://www.fromlatest.io/#/
 
