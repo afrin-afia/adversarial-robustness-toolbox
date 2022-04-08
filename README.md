@@ -1,20 +1,26 @@
 # Adversarial Robustness of Contemporary Machine Learning Models.
 
-This is my final project repository for the CMPUT 664 course.
-In this work, we have implemented three different adversarial attacks on four different datasets and the model hardening defense mechanism. We leveraged the open-source tool, `Adversarial Robustness Toolbox`, to generate these attacks. Check their [github repository](https://github.com/Trusted-AI/adversarial-robustness-toolbox) to know more about the installation details.
+This is my final project repository for the CMPUT 664 course at the University of Alberta in the winter of 2022. 
+
+## Author
+Afia Afrin
+
+## Project Description
+
+In this work, we have implemented three different adversarial attacks on four different datasets and the model hardening defense mechanism on two datasets. We leveraged the open-source tool, [`Adversarial Robustness Toolbox`](https://github.com/Trusted-AI/adversarial-robustness-toolbox), to generate these attacks. 
 
 This repository includes:
 
-* a Dockerfile to build the Docker script,
+* a [Dockerfile](https://github.com/afrin-afia/adversarial-robustness-toolbox/blob/main/Dockerfile) to build the Docker script,
 * the instructions to reproduce the results
 * `python` source codes to generate:
-  * FGSM and PGD attacks on text dataset
-  * Defense mechanism: model hardening with PGD on text dataset
-  * DeepFool attack on audio dataset
-  * Defense mechanism: model hardening with PGD on audio dataset
-  * FGSM and DeepFool attacks on image dataset (Fruits-360, Model: CNN, PyTorch)
-  * FGSM and PGD on image dataset (Fruits-360, Model: sequential NN, tf.keras)
-  * FGSM and DeepFool on image dataset (MNIST, Model: sequential NN, tf.keras)
+  * FGSM and PGD attacks on text dataset ([here](https://github.com/afrin-afia/adversarial-robustness-toolbox/blob/main/sgrid/src/fgsm_pgd_text_data.py))
+  * Defense mechanism: model hardening with PGD on text dataset ([here](https://github.com/afrin-afia/adversarial-robustness-toolbox/blob/main/sgrid/src/model_hardening_text_data.py))
+  * DeepFool attack on audio dataset ([here](https://github.com/afrin-afia/adversarial-robustness-toolbox/blob/main/urbansound/src/deepfool_audio_data_multiclass.py))
+  * Defense mechanism: model hardening with PGD on audio dataset ([here](https://github.com/afrin-afia/adversarial-robustness-toolbox/blob/main/urbansound/src/model_hardening_audio_data.py))
+  * FGSM and DeepFool attacks on image dataset (Fruits-360, Model: CNN, PyTorch) ([here](https://github.com/afrin-afia/adversarial-robustness-toolbox/blob/main/fruits/src/attacks_on_pytorch.py))
+  * FGSM and PGD on image dataset (Fruits-360, Model: sequential NN, tf.keras) ([here](https://github.com/afrin-afia/adversarial-robustness-toolbox/blob/main/fruits/src/fruits.py))
+  * FGSM and DeepFool on image dataset (MNIST, Model: sequential NN, tf.keras) ([here](https://github.com/afrin-afia/adversarial-robustness-toolbox/blob/main/fruits/src/mnist.py))
   * Output files, graphs, plots, and output images
 
 ## Docker Image
@@ -25,42 +31,21 @@ docker build -t <image_name>
 docker run -i <image_name>
 ```
 
-A demo video showing how to reproduce the experiments is available in the 
-## Adversarial Threats
+A demo video showing how to reproduce the experiments using the pre-buils Docker image is available in this [`folder`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/demo%20video-%20reproducing%20results)
 
-<p align="center">
-  <img src="docs/images/adversarial_threats_attacker.png?raw=true" width="400" title="ART logo">
-  <img src="docs/images/adversarial_threats_art.png?raw=true" width="400" title="ART logo">
-</p>
-<br />
+## Manual Installation
+For manual installation process follow the guide provided in the [`ART git repository`](https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/Get-Started#setup).
 
-## ART for Red and Blue Teams (selection)
+## Experimental Results
+Experimental results and outputs from the attacks on image dataset are available [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/fruits/inputOutput).
 
-<p align="center">
-  <img src="docs/images/white_hat_blue_red.png?raw=true" width="800" title="ART Red and Blue Teams">
-</p>
-<br />
+Experimental results and outputs from the attacks on text dataset are available [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/sgrid/outs)
 
-## Learn more
+Experimental results and outputs from the attacks on audio dataset are available [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/urbansound/outs)
 
-| **[Get Started][get-started]**     | **[Documentation][documentation]**     | **[Contributing][contributing]**           |
-|-------------------------------------|-------------------------------|-----------------------------------|
-| - [Installation][installation]<br>- [Examples](examples/README.md)<br>- [Notebooks](notebooks/README.md) | - [Attacks][attacks]<br>- [Defences][defences]<br>- [Estimators][estimators]<br>- [Metrics][metrics]<br>- [Technical Documentation](https://adversarial-robustness-toolbox.readthedocs.io) | - [Slack](https://ibm-art.slack.com), [Invitation](https://join.slack.com/t/ibm-art/shared_invite/enQtMzkyOTkyODE4NzM4LTA4NGQ1OTMxMzFmY2Q1MzE1NWI2MmEzN2FjNGNjOGVlODVkZDE0MjA1NTA4OGVkMjVkNmQ4MTY1NmMyOGM5YTg)<br>- [Contributing](CONTRIBUTING.md)<br>- [Roadmap][roadmap]<br>- [Citing][citing] |
+## Documents
+The final project report is available [here]()
+The final project presentation slide is available [here]()
 
-[get-started]: https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/Get-Started
-[attacks]: https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/ART-Attacks
-[defences]: https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/ART-Defences
-[estimators]: https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/ART-Estimators
-[metrics]: https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/ART-Metrics
-[contributing]: https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/Contributing
-[documentation]: https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/Documentation
-[installation]: https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/Get-Started#setup
-[roadmap]: https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/Roadmap
-[citing]: https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/Contributing#citing-art
-
-The library is under continuous development. Feedback, bug reports and contributions are very welcome!
-
-# Acknowledgment
-This material is partially based upon work supported by the Defense Advanced Research Projects Agency (DARPA) under
-Contract No. HR001120C0013. Any opinions, findings and conclusions or recommendations expressed in this material are
-those of the author(s) and do not necessarily reflect the views of the Defense Advanced Research Projects Agency (DARPA).
+## Acknowledgement
+I acknowledge that, all external resources that have been used in this project properly listed and referred. I would also like to express my thankfulness to our course instructor Professor Dr. Karim Ali. 
