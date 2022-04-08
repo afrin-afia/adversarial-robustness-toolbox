@@ -24,4 +24,6 @@ In a nutshell, the final directory tree should lokk like this:
     │     └── Training                
     └── ...
 
-And... Voilà! You are all ready to rerun this experiment! 
+And... Voilà! You are all ready to rerun this experiment on MNIST dataset! 
+
+Now, just execute the `src/mnist` python script. 
