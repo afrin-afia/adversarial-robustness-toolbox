@@ -7,7 +7,7 @@ Replicating the experiments on the
 Since this dataset is exceptionally large in volume and there already exists a publicly accessible URL to download the dataset, 
 we chose not to upload it again. 
 
-So, all you need to do is download the dataset from `[Kaggle]((https://www.kaggle.com/datasets/chrisfilo/urbansound8k))` 
+So, all you need to do is download the dataset from [`Kaggle`](https://www.kaggle.com/datasets/chrisfilo/urbansound8k) 
 and place it inside a folder named `urbansound/data`. 
 
 The final directory tree should look like this:
