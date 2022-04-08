@@ -18,6 +18,7 @@ In a nutshell, the final directory tree should lokk like this:
 
 .
 ├── ...
+
 ├── fruits                    
 │   ├── mnistjpg          
 │     ├── Test         
