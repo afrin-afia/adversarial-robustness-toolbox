@@ -7,7 +7,12 @@ Afia Afrin
 
 ## Project Description
 
-In this work, we have implemented three different adversarial attacks on four different datasets and the model hardening defense mechanism on two datasets. We leveraged the open-source tool, [`Adversarial Robustness Toolbox`](https://github.com/Trusted-AI/adversarial-robustness-toolbox), to generate these attacks. 
+In this work, we have implemented three different adversarial attacks on four different datasets and the model hardening defense mechanism on two datasets. We leveraged the open-source tool, [`Adversarial Robustness Toolbox`](https://github.com/Trusted-AI/adversarial-robustness-toolbox), to generate these attacks. The datasets we have used are:
+
+* [Fruits-360](https://www.kaggle.com/datasets/moltean/fruits)
+* [MNIST](https://ieeexplore.ieee.org/abstract/document/6296535?casa_token=fGZ6RD4tMY0AAAAA:0JP1BDQ-5Ga4YMc2Vnlg7e5hhUC1iTMPWJW6E3EGzFDYBgYH1xfICUwDcEwUhd0JvdVHZJ3y)
+* [Smart Grid Stability](https://www.kaggle.com/datasets/pcbreviglieri/smart-grid-stability)
+* [UrbanSound8K](https://www.kaggle.com/datasets/chrisfilo/urbansound8k)
 
 This repository includes:
 
@@ -36,11 +41,11 @@ A demo video showing how to reproduce the experiments using the pre-buils Docker
 ## Manual Installation
 For manual installation process follow the guide provided in the [`ART git repository`](https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/Get-Started#setup). While reproducing the experiments using manual setup, kindly follow the instructions provided in the corresponding `README` files. 
 
-Instructions to manually replicate the experiments on image data are available here.
+* Instructions to manually replicate the experiments on image dataset are available here.
 
-Instructions to manually replicate the experiments on text data are available here.
+* Instructions to manually replicate the experiments on text dataset are available here.
 
-Instructions to manually replicate the experiments on audio data are available here.
+* Instructions to manually replicate the experiments on audio dataset are available here.
 
 
 ## Experimental Results
