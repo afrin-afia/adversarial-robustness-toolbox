@@ -16,12 +16,12 @@ So, all you need to do is clone the dataset from the repository mentioned above 
 
 In a nutshell, the final directory tree should lokk like this:
 
- .
+    .
     ├── ...
     ├── fruits                    
-    │   ├── mnistjpg          
-    │   ├── Test         
-    │   └── Training                
+    │   ├── mnistjpg         
+    │     ├── Test         
+    │     └── Training                
     └── ...
 
 And... Voilà! You are all ready to rerun this experiment! 
