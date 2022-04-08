@@ -31,7 +31,7 @@ This repository includes:
 ## Docker Image
 A pre-built version of this project is available as Docker image. To reproduce the experimental results using the image:
 ```
-git pull <this repository>
+git clone <this repository>
 docker build -t <image_name>
 docker run -i <image_name>
 ```
