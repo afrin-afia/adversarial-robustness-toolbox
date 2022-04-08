@@ -8,13 +8,13 @@ executing the `src/attacks_on_pytorch` file will generate attacks against a PyTo
 
 However, replicating the experiments on the 
 [MNIST](https://ieeexplore.ieee.org/abstract/document/6296535?casa_token=fGZ6RD4tMY0AAAAA:0JP1BDQ-5Ga4YMc2Vnlg7e5hhUC1iTMPWJW6E3EGzFDYBgYH1xfICUwDcEwUhd0JvdVHZJ3y)
-dataset requires an additional task to be done. Since the `MNIST` dataset is a exceptionally large in volume and there already exists a github repository
+dataset requires an additional task to be done. Since the `MNIST` dataset is exceptionally large in volume and there already exists a github repository
 for this dataset, we chose not to upload it again. Our source code uses the image version of the MNIST dataset, which can be found [here] 
 (https://github.com/teavanist/MNIST-JPG). 
 
 So, all you need to do is clone the dataset from the repository mentioned above and place it inside a folder named `fruits/mnistjpg`. All the training samples should be kept in a folder named `Training` and the test samples should be in a folder named `Test`. 
 
-In a nutshell, the final directory tree should lokk like this:
+In a nutshell, the final directory tree should look like this:
 
     .
     ├── ...
