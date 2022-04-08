@@ -34,7 +34,7 @@ A pre-built version of this project is available as Docker image. To reproduce t
 git clone <this repository>
 ```
 
-This repository includes the `smart grid stability` text dataset and the `fruits-360` image dataset. However, you need to place the `MNIST` and `UrbanSound8K` datasets inside the appropriate directories. This datasets are so large that we skipped uploading them here. Just follow the directions provided [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/fruits) and [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/urbansound). 
+This repository includes the `smart grid stability` text dataset and the `fruits-360` image dataset. However, you need to place the `MNIST` and `UrbanSound8K` datasets inside the appropriate directories. This datasets are so large that we skipped uploading them here. Just follow the directions provided [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/fruits) and [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/urbansound) to place the datasets in proper locations. 
 
 Then build and run the docker image to reproduce the results.
 
