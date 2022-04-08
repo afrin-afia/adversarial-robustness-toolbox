@@ -65,4 +65,4 @@ Experimental results and outputs from the attacks on audio dataset are available
 The final project report and presentation slide are available [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/Documents).
 
 ## Acknowledgement
-I acknowledge that, all external resources that have been used in this project properly listed and referred. I would also like to express my thankfulness to our course instructor Professor [Dr. Karim Ali](https://karimali.ca/). 
+I acknowledge that all external resources have been listed and referred to appropriately. I would also like to express my thankfulness to our course instructor Professor [Dr. Karim Ali](https://karimali.ca/). 
