@@ -1,4 +1,4 @@
-# Adversarial Robustness of Contemporary Machine Learning Models.
+# Adversarial Robustness of Contemporary Machine Learning Models
 
 This is my final project repository for the CMPUT 664 course at the University of Alberta in the winter of 2022. 
 
@@ -41,11 +41,11 @@ A demo video showing how to reproduce the experiments using the pre-buils Docker
 ## Manual Installation
 For manual installation process follow the guide provided in the [`ART git repository`](https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/Get-Started#setup). While reproducing the experiments using manual setup, kindly follow the instructions provided in the corresponding `README` files. 
 
-* Instructions to manually replicate the experiments on image dataset are available here.
+* Instructions to manually replicate the experiments on image dataset are available [here](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/fruits).
 
-* Instructions to manually replicate the experiments on text dataset are available here.
+* Instructions to manually replicate the experiments on text dataset are available [here](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/sgrid).
 
-* Instructions to manually replicate the experiments on audio dataset are available here.
+* Instructions to manually replicate the experiments on audio dataset are available [here](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/urbansound).
 
 
 ## Experimental Results
