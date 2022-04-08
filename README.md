@@ -29,23 +29,29 @@ This repository includes:
   * Output files, graphs, plots, and output images
 
 ## Docker Image
-A pre-built version of this project is available as Docker image. To reproduce the experimental results using the image:
+A pre-built version of this project is available as Docker image. To reproduce the experimental results using first clone this repository using the `git clone` command.
 ```
 git clone <this repository>
+```
+
+This repository includes the `smart grid stability` text dataset and the `fruits-360` image dataset. However, you need to place the `MNIST` and `UrbanSound8K` datasets inside the appropriate directories. This datasets are so large that we skipped uploading them here. Just follow the directions provided [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/fruits) and [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/urbansound). 
+
+Then build and run the docker image to reproduce the results.
+
+```
 docker build -t <image_name>
 docker run -i <image_name>
 ```
-
 A demo video showing how to reproduce the experiments using the pre-built Docker image is available in this [`folder`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/demo%20video-%20reproducing%20results). 
 
 ## Manual Installation
 For manual installation process follow the guide provided in the [`ART git repository`](https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/Get-Started#setup). While reproducing the experiments using manual setup, kindly follow the instructions provided in the corresponding `README` files. 
 
-* Instructions to manually replicate the experiments on image dataset are available [here](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/fruits).
+* Instructions to manually replicate the experiments on image dataset are available [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/fruits).
 
-* Instructions to manually replicate the experiments on text dataset are available [here](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/sgrid).
+* Instructions to manually replicate the experiments on text dataset are available [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/sgrid).
 
-* Instructions to manually replicate the experiments on audio dataset are available [here](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/urbansound).
+* Instructions to manually replicate the experiments on audio dataset are available [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/urbansound).
 
 
 ## Experimental Results
@@ -56,9 +62,7 @@ Experimental results and outputs from the attacks on text dataset are available 
 Experimental results and outputs from the attacks on audio dataset are available [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/urbansound/outs).
 
 ## Documents
-The final project report is available [here]().
-
-The final project presentation slide is available [here]().
+The final project report and presentation slide are available [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/Documents).
 
 ## Acknowledgement
 I acknowledge that, all external resources that have been used in this project properly listed and referred. I would also like to express my thankfulness to our course instructor Professor [Dr. Karim Ali](https://karimali.ca/). 
