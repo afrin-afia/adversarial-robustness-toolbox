@@ -1,33 +1,31 @@
-# Adversarial Robustness Toolbox (ART) v1.10
-<p align="center">
-  <img src="docs/images/art_lfai.png?raw=true" width="467" title="ART logo">
-</p>
-<br />
+# Adversarial Robustness of Contemporary Machine Learning Models.
 
-![Continuous Integration](https://github.com/Trusted-AI/adversarial-robustness-toolbox/workflows/Continuous%20Integration/badge.svg)
-![CodeQL](https://github.com/Trusted-AI/adversarial-robustness-toolbox/workflows/CodeQL/badge.svg)
-[![Documentation Status](https://readthedocs.org/projects/adversarial-robustness-toolbox/badge/?version=latest)](http://adversarial-robustness-toolbox.readthedocs.io/en/latest/?badge=latest)
-[![PyPI](https://badge.fury.io/py/adversarial-robustness-toolbox.svg)](https://badge.fury.io/py/adversarial-robustness-toolbox)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/Trusted-AI/adversarial-robustness-toolbox.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Trusted-AI/adversarial-robustness-toolbox/context:python)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/Trusted-AI/adversarial-robustness-toolbox.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Trusted-AI/adversarial-robustness-toolbox/alerts/)
-[![codecov](https://codecov.io/gh/Trusted-AI/adversarial-robustness-toolbox/branch/main/graph/badge.svg)](https://codecov.io/gh/Trusted-AI/adversarial-robustness-toolbox)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/adversarial-robustness-toolbox)](https://pypi.org/project/adversarial-robustness-toolbox/)
-[![slack-img](https://img.shields.io/badge/chat-on%20slack-yellow.svg)](https://ibm-art.slack.com/)
-[![Downloads](https://pepy.tech/badge/adversarial-robustness-toolbox)](https://pepy.tech/project/adversarial-robustness-toolbox)
-[![Downloads](https://pepy.tech/badge/adversarial-robustness-toolbox/month)](https://pepy.tech/project/adversarial-robustness-toolbox)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/5090/badge)](https://bestpractices.coreinfrastructure.org/projects/5090)
+This is my final project repository for the CMPUT 664 course.
+In this work, we have implemented three different adversarial attacks on four different datasets and the model hardening defense mechanism. We leveraged the open-source tool, `Adversarial Robustness Toolbox`, to generate these attacks. Check their [github repository](https://github.com/Trusted-AI/adversarial-robustness-toolbox) to know more about the installation details.
 
-[中文README请按此处](README-cn.md)
+This repository includes:
 
-Adversarial Robustness Toolbox (ART) is a Python library for Machine Learning Security. ART provides tools that enable
-developers and researchers to defend and evaluate Machine Learning models and applications against the
-adversarial threats of Evasion, Poisoning, Extraction, and Inference. ART supports all popular machine learning frameworks
-(TensorFlow, Keras, PyTorch, MXNet, scikit-learn, XGBoost, LightGBM, CatBoost, GPy, etc.), all data types
-(images, tables, audio, video, etc.) and machine learning tasks (classification, object detection, speech recognition,
-generation, certification, etc.).
+* a Dockerfile to build the Docker script,
+* the instructions to reproduce the results
+* `python` source codes to generate:
+  * FGSM and PGD attacks on text dataset
+  * Defense mechanism: model hardening with PGD on text dataset
+  * DeepFool attack on audio dataset
+  * Defense mechanism: model hardening with PGD on audio dataset
+  * FGSM and DeepFool attacks on image dataset (Fruits-360, Model: CNN, PyTorch)
+  * FGSM and PGD on image dataset (Fruits-360, Model: sequential NN, tf.keras)
+  * FGSM and DeepFool on image dataset (MNIST, Model: sequential NN, tf.keras)
+  * Output files, graphs, plots, and output images
 
+## Docker Image
+A pre-built version of this project is available as Docker image. To reproduce the experimental results using the image:
+```
+git pull <this repository>
+docker build -t <image_name>
+docker run -i <image_name>
+```
+
+A demo video showing how to reproduce the experiments is available in the 
 ## Adversarial Threats
 
 <p align="center">
