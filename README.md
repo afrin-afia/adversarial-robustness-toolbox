@@ -7,10 +7,10 @@ Afia Afrin
 
 ## Project Description
 
-In this work, we have implemented three different adversarial attacks on four different datasets and the model hardening defense mechanism on two datasets. We leveraged the open-source tool, [`Adversarial Robustness Toolbox`](https://github.com/Trusted-AI/adversarial-robustness-toolbox), to generate these attacks. The datasets we used are:
+In this work, we have implemented three different adversarial attacks on four different datasets and the model hardening defense mechanism on two datasets. We leveraged the open-source tool, [`Adversarial Robustness Toolbox`](https://github.com/Trusted-AI/adversarial-robustness-toolbox), to generate these attacks. We utilized the following datasets-
 
 * [Fruits-360](https://www.kaggle.com/datasets/moltean/fruits)
-* [MNIST](https://ieeexplore.ieee.org/abstract/document/6296535?casa_token=fGZ6RD4tMY0AAAAA:0JP1BDQ-5Ga4YMc2Vnlg7e5hhUC1iTMPWJW6E3EGzFDYBgYH1xfICUwDcEwUhd0JvdVHZJ3y)
+* [MNIST](https://github.com/teavanist/MNIST-JPG)
 * [Smart Grid Stability](https://www.kaggle.com/datasets/pcbreviglieri/smart-grid-stability)
 * [UrbanSound8K](https://www.kaggle.com/datasets/chrisfilo/urbansound8k)
 
