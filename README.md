@@ -7,7 +7,7 @@ Afia Afrin
 
 ## Project Description
 
-In this work, we have implemented three different adversarial attacks on four different datasets and the model hardening defense mechanism on two datasets. We leveraged the open-source tool, [`Adversarial Robustness Toolbox`](https://github.com/Trusted-AI/adversarial-robustness-toolbox), to generate these attacks. The datasets we have used are:
+In this work, we have implemented three different adversarial attacks on four different datasets and the model hardening defense mechanism on two datasets. We leveraged the open-source tool, [`Adversarial Robustness Toolbox`](https://github.com/Trusted-AI/adversarial-robustness-toolbox), to generate these attacks. The datasets we used are:
 
 * [Fruits-360](https://www.kaggle.com/datasets/moltean/fruits)
 * [MNIST](https://ieeexplore.ieee.org/abstract/document/6296535?casa_token=fGZ6RD4tMY0AAAAA:0JP1BDQ-5Ga4YMc2Vnlg7e5hhUC1iTMPWJW6E3EGzFDYBgYH1xfICUwDcEwUhd0JvdVHZJ3y)
@@ -36,7 +36,7 @@ docker build -t <image_name>
 docker run -i <image_name>
 ```
 
-A demo video showing how to reproduce the experiments using the pre-buils Docker image is available in this [`folder`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/demo%20video-%20reproducing%20results). 
+A demo video showing how to reproduce the experiments using the pre-built Docker image is available in this [`folder`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/demo%20video-%20reproducing%20results). 
 
 ## Manual Installation
 For manual installation process follow the guide provided in the [`ART git repository`](https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/Get-Started#setup). While reproducing the experiments using manual setup, kindly follow the instructions provided in the corresponding `README` files. 
