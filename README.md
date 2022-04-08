@@ -31,21 +31,29 @@ docker build -t <image_name>
 docker run -i <image_name>
 ```
 
-A demo video showing how to reproduce the experiments using the pre-buils Docker image is available in this [`folder`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/demo%20video-%20reproducing%20results)
+A demo video showing how to reproduce the experiments using the pre-buils Docker image is available in this [`folder`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/demo%20video-%20reproducing%20results). 
 
 ## Manual Installation
-For manual installation process follow the guide provided in the [`ART git repository`](https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/Get-Started#setup).
+For manual installation process follow the guide provided in the [`ART git repository`](https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/Get-Started#setup). While reproducing the experiments using manual setup, kindly follow the instructions provided in the corresponding `README` files. 
+
+Instructions to manually replicate the experiments on image data are available here.
+
+Instructions to manually replicate the experiments on text data are available here.
+
+Instructions to manually replicate the experiments on audio data are available here.
+
 
 ## Experimental Results
 Experimental results and outputs from the attacks on image dataset are available [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/fruits/inputOutput).
 
-Experimental results and outputs from the attacks on text dataset are available [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/sgrid/outs)
+Experimental results and outputs from the attacks on text dataset are available [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/sgrid/outs).
 
-Experimental results and outputs from the attacks on audio dataset are available [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/urbansound/outs)
+Experimental results and outputs from the attacks on audio dataset are available [`here`](https://github.com/afrin-afia/adversarial-robustness-toolbox/tree/main/urbansound/outs).
 
 ## Documents
-The final project report is available [here]()
-The final project presentation slide is available [here]()
+The final project report is available [here]().
+
+The final project presentation slide is available [here]().
 
 ## Acknowledgement
-I acknowledge that, all external resources that have been used in this project properly listed and referred. I would also like to express my thankfulness to our course instructor Professor Dr. Karim Ali. 
+I acknowledge that, all external resources that have been used in this project properly listed and referred. I would also like to express my thankfulness to our course instructor Professor [Dr. Karim Ali](https://karimali.ca/). 
